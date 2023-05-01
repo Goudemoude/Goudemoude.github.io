@@ -1,0 +1,359 @@
+/*---------------STYLES GENERAUX---------------*/
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: white; 
+}
+
+/*---------------HEADER---------------*/
+
+header {
+    background-color: #EAEAEA;
+}
+.header{
+    /* background-color: white;  */
+    display: flex;
+    width: auto;
+    /* width: 100%; */
+    margin: auto;
+    justify-content: center;
+    margin-left: 350px;
+}
+    
+    .logo{
+    padding: 20px 0 20px 20px;
+    width: 150px;
+    /* border-radius: 50%; */
+}
+
+h1{
+    font-size: 30px;
+}
+
+.H { 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+    width: 58vw; 
+}
+
+.Hbouton{
+    height: 60px;
+    width: 60px;
+    padding:2px;
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+    background: linear-gradient(#c89c7d, white);
+}
+
+.Hbouton:hover{
+    background: rgb(9, 71, 28);
+    color: white;
+}
+
+.M{
+    display: block;
+}
+
+ul{
+    list-style: none;
+}
+
+.menu{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    /* background-color: rgb(72, 72, 196); */
+    position : relative; 
+    right : 250px; 
+    margin: auto;
+}
+.menu a{   
+    text-decoration: none;                   
+    padding: 10px 30px 10px 30px;         
+    background-color: rgba(24, 99, 49, 75);   
+    color: black;                 
+    border: 1px solid black;  
+    display: block;
+    width: auto;
+    height: auto;
+    background: none;
+}
+.vert a:hover{
+    background-color: rgb(9, 71, 28);
+    color: white;
+    border-color: white;
+}
+
+/*------------NOTRE BOUTIQUE-------------*/
+
+.titre {
+    border: 1px solid black; 
+    margin-left: 50px;
+    margin-right: auto;
+    width: 150px;  
+}
+ .notreboutique {
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            background-color:darkseagreen ;
+            margin-left: 50px;
+            margin-right: auto;
+}
+        }
+.imgboutique {
+    max-width : 100%;
+    height : auto;
+}
+
+.notreboutiquetext { padding: 1%;
+                    height: 20px;
+}
+
+/*------------RETROUVEZ-------------*/
+
+
+h2 { align-items: center;
+    text-align: center;
+}
+
+
+.articles {
+    display: block;
+    padding: 20px;
+    /* border: 1px solid;  */
+    /* border-radius: 5%; */
+    margin: 0 75px 0 75px;
+    width: 250px;
+    background-color: #EAEAEA;
+    box-shadow: 2px 3px 5px black; 
+}
+    
+.prix1{
+    position: absolute;
+    border: 2px solid;
+    border-radius: 100%;
+    background-color: #c89c7d;
+    padding: 8px;
+    color: aliceblue; 
+}
+
+.Aglaonème{
+    width: 250px;
+    height: 175px;
+    margin: 0;
+}
+    
+    .esp{
+    text-decoration: none;
+}
+
+.boutonA {
+    border: 1px solid;
+    margin: 5px;
+    box-shadow: 2px 3px 5px black;
+    height: 40px;
+    margin-left: 12px;
+   transition-duration: 1s  ;
+}
+
+.boutonA:hover{
+    background-color: #c89c7d ;
+    color: white;
+    border-color: black;
+    width: 225px;
+    cursor: pointer; 
+}
+
+.produits {  display: flex;
+            flex-direction: row;
+    position: relative; 
+}
+
+/*------------JS-------------*/
+
+.slick-section{
+    padding: 25px;
+    text-align: center;
+}
+.slick-container{
+    width: 100%;
+    margin: 0 auto;
+}
+.slick-wrap{
+    margin: 0 -10px;
+}
+.slick-item{
+    padding: 0 10px;
+}
+
+
+.slick-dots {
+    list-style-type: none;
+    margin: 25px 0 0;
+    padding: 0;
+}
+ .slick-dots li {
+    width: auto;
+    height: auto;
+    display: inline-block;
+    padding: 0 5px;
+ }
+button{
+    width: auto;
+    height: auto;
+    padding: 10px;
+    font-size: 12px;
+    color: #666;
+    border: none;
+    background: #f0f0f0;
+ }
+
+ .slick-active button{
+     background: #ccc;
+ }
+ 
+ .cont-hide{
+    display:none;
+ }
+
+
+/*------------Grid-------------*/
+
+.section-astuces {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: repeat(3, auto);
+			grid-gap: 10px;
+			height: 500px;
+            width: 1200px;
+			flex-direction: column;
+            margin-left: 50px;
+            margin-right: auto;
+		}
+        
+        .article-1, .article-4 {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .article-2, .article-3 {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .img1 {
+            width: 100%;
+            max-width: 700px;
+        }
+        
+        .img2 {
+            height: 100%;
+            max-height: 400px;
+        }
+        
+        .texte2 {
+            width: 100%;
+        }
+        
+        p {
+            text-align: justify;
+            padding: 5px;
+            font-size: 20px;
+        }
+        
+		.article-1 {
+			border: solid 1px;
+			font-size: 24px;
+			font-weight: bold;
+			text-align: center;
+			grid-row: 1 / span 2;
+		}
+		.article-2 {
+			border: solid 1px;
+			font-size: 18px;
+			text-align: center;
+			grid-row: 3;
+		}
+		.article-3 {
+			border: solid 1px;
+			font-size: 18px;
+			text-align: center;
+			grid-row: 1;
+		}
+		.article-4 {
+			border: solid 1px;
+			font-size: 24px;
+			font-weight: bold;
+			text-align: center;
+			grid-row: 2 / span 2;
+		}
+
+/*------------foot-------------*/
+
+.informations {
+    margin-left: 500px;
+    margin-top: 200px;
+}
+
+.Uno { background-color: whitesmoke; width: 600px ; height:330px; position: relative; top: 380px ; right: 10px; right: 300px}
+
+.Deux {width: 500px ; height:500px; left: 20px; }
+
+.imgmap {
+    width: 500px ; height:500px; margin-left: 200px;
+
+}
+
+.textinfo { padding: 5%;
+            height: 20px;
+    }
+
+    
+}
+/*------------FOOTER-------------*/
+
+footer {
+    background-color: #EAEAEA;
+}
+footer img {
+    width: 35px;
+    
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.email{
+    width: 200px;
+}
+
+.Ftext{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    background-color: #EAEAEA;
+    
+}
+
+.Ftext a{
+    text-decoration: none;
+    color: black;
+    padding-left: 30px;
+}
+
+.paiements{
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
